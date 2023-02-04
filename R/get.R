@@ -12,7 +12,7 @@
 #' @param file A character string specifying the name of the SAS data file to be
 #'   loaded. If `NULL`, all `*.sas7bdat` files in the `source` directory are
 #'   loaded.
-#' @return A list of data frames, one data frame per SAS file loaded.
+#' @return A list of [data.frames()].
 #' @importFrom purrr map safely
 #' @importFrom rlang set_names is_null
 #' @importFrom haven read_sas
