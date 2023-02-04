@@ -9,6 +9,7 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/sentinelTidyData)](https://CRAN.R-project.org/package=sentinelTidyData)
+[![R-CMD-check](https://github.com/scarnecchia/sentinelTidyData/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/scarnecchia/sentinelTidyData/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 Tools for working with the SAS datasets returned by [F.D.A Sentinel
