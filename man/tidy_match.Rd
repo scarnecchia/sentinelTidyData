@@ -2,15 +2,15 @@
 % Please edit documentation in R/tidy_match.R
 \name{tidy_match}
 \alias{tidy_match}
-\title{Convert table variables in match datasets to logicals}
+\title{Convert table variables in match datasets to \code{\link[=logical]{logical()}}}
 \usage{
 tidy_match(data)
 }
 \arguments{
-\item{data}{a data frame}
+\item{data}{A data.frame}
 }
 \value{
-a tidied data frame
+A \code{\link[tibble:tibble]{tibble::tibble()}}
 }
 \description{
 Tidy the columns of data frame in such a way that the values in dp and count

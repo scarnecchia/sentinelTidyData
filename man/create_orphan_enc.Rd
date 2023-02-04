@@ -7,15 +7,15 @@
 create_orphan_enc(data, linked.tables = NULL, cols = NULL)
 }
 \arguments{
-\item{data}{Data frame containing the variables 'dem', 'enr', and 'count'.}
+\item{data}{Data frame containing the variables \code{enc}, and \code{count}.}
+
+\item{linked.tables}{Character vector of tables to be used
+in the calculation of \code{matched}.}
 
 \item{cols}{Columns to group by in the calculation of utilization summary.}
-
-\item{utilization.tables}{Character vector of utilization tables to be used
-in the calculation of 'utilizing'.}
 }
 \value{
-A data frame with a summary of orphaned and unorphaned EncounterIDs
+A \code{\link[tibble:tibble]{tibble::tibble()}}
 }
 \description{
 Creates a table displaying the counts of EncounterIDs found the ENC table,

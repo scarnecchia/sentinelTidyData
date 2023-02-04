@@ -7,15 +7,15 @@
 create_utilization(data, utilization.tables = NULL, cols = NULL)
 }
 \arguments{
-\item{data}{Data frame containing the variables 'dem', 'enr', and 'count'.}
+\item{data}{Data frame containing the variables \code{dem}, \code{enr}, and \code{count}.}
 
 \item{utilization.tables}{Character vector of utilization tables to be used
-in the calculation of 'utilizing'.}
+in the calculation of \code{utilizing}.}
 
 \item{cols}{Columns to group by in the calculation of utilization summary.}
 }
 \value{
-A data frame with a summary of utilization.
+A \code{\link[tibble:tibble]{tibble::tibble()}}
 }
 \description{
 Creates a table displaying the counts of PatIDs found in both the DEM and ENR
