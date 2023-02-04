@@ -18,3 +18,4 @@ Imports:
     tibble,
     tidyr,
     zoo
+URL: https://scarnecchia.github.io/sentinelTidyData/
