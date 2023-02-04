@@ -17,5 +17,9 @@ Imports:
     magrittr,
     tibble,
     tidyr,
-    zoo
+    zoo,
+    fs,
+    purrr,
+    haven,
+    rlang
 URL: https://scarnecchia.github.io/sentinelTidyData/
