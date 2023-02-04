@@ -11,8 +11,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/sentinelTidyData)](https://CRAN.R-project.org/package=sentinelTidyData)
 <!-- badges: end -->
 
-The goal of sentinelTidyData is to provide tools to make it easier to
-work with the SAS datasets returned by [F.D.A Sentinel
+Tools for working with the SAS datasets returned by [F.D.A Sentinel
 Initiative’s](https://www.sentinelinitiative.org/) [Data
 Characterization and Quality Assurance
 Package](https://dev.sentinelsystem.org/projects/QA/repos/qa_package/browse).

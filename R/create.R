@@ -5,12 +5,12 @@
 #' DTH, ENC, PRO or only one of the DEM & ENR tables.
 #'
 #'
-#' @param data Data frame containing the variables 'dem', 'enr', and 'count'.
+#' @param data Data frame containing the variables `dem`, `enr`, and `count`.
 #' @param utilization.tables Character vector of utilization tables to be used
-#'   in the calculation of 'utilizing'.
+#'   in the calculation of `utilizing`.
 #' @param cols Columns to group by in the calculation of utilization summary.
 #'
-#' @return A data frame with a summary of utilization.
+#' @return A [tibble::tibble()]
 #'
 #' @examples
 #' create_utilization(data = mydata, utilization.tables = c("DIA", "DIS", "DTH", "ENC", "PRO"))
@@ -51,23 +51,23 @@ create_utilization <-
         }
       } %>%
       dplyr::summarise(count = sum(count)) %>%
-      dplyr::ungroup()
+      dplyr::ungroup() %>%
+      tibble::as_tibble()
   }
 
 
 #' Get counts of orphaned and unorphaned EncounterIDs.
 #'
-#' Creates a table displaying the counts of EncounterIDs found the ENC table,
+#' @description Creates a table displaying the counts of EncounterIDs found the ENC table,
 #' and returns TRUE if those EncounterIDs have a match in any or both of the DIA
 #' and PRO tables, and FALSE if they do not.
 #'
-#'
-#' @param data Data frame containing the variables 'dem', 'enr', and 'count'.
-#' @param utilization.tables Character vector of utilization tables to be used
-#'   in the calculation of 'utilizing'.
+#' @param data Data frame containing the variables `enc`, and `count`.
+#' @param linked.tables Character vector of tables to be used
+#'   in the calculation of `matched`.
 #' @param cols Columns to group by in the calculation of utilization summary.
 #'
-#' @return A data frame with a summary of orphaned and unorphaned EncounterIDs
+#' @return A [tibble::tibble()]
 #'
 #' @export
 create_orphan_enc <- function(data,
@@ -100,7 +100,8 @@ create_orphan_enc <- function(data,
       }
     } %>%
     dplyr::summarise(count = sum(count)) %>%
-    dplyr::ungroup()
+    dplyr::ungroup() %>%
+    tibble::as_tibble()
 }
 
 

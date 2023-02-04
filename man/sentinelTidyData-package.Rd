@@ -8,6 +8,13 @@
 \description{
 What the package does (one paragraph).
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://scarnecchia.github.io/sentinelTidyData/}
+}
+
+}
 \author{
 \strong{Maintainer}: Daniel Scarnecchia \email{scarnecchia@gmail.com}
 
